@@ -1,7 +1,7 @@
 # Django_MySQL
-Here I have steps that describe how to connect MySQL to Django project.
+Here I have steps that describe how to connect MySQL to Django project on Linux.
 
-### First of all, clone this repository, install virtual environment and download all requirements with following commands:
+### First of all, clone this repository, install virtual environment and download all requirements with the following commands:
 
 - `chmod u+x launch.sh`
 - `./launch.sh`
@@ -23,6 +23,6 @@ Here I have steps that describe how to connect MySQL to Django project.
 
 ### Connect your database with Django:
 
-- Change DATABASES variable in the settings.py according to your database user-name, password, host and port. For more information check [Django Documentation](https://docs.djangoproject.com/en/4.1/ref/settings/#std-setting-DATABASES "Django documentation about database settings")"
+- Change DATABASES variable in the settings.py according to your database's user-name, password, host and port. For more information check [Django Documentation](https://docs.djangoproject.com/en/4.1/ref/settings/#std-setting-DATABASES "Django documentation about database settings")
 - Install mysqlclient package with `pip install mysqlclient`
 - And run the migrate command `python manage.py migrate`
