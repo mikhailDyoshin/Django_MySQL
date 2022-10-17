@@ -16,7 +16,7 @@ Here I have steps that describe how to connect MySQL to Django project on Linux.
 
 ### To create a database follow the next steps:
 
-- To run MySQL shell type `sudo mysql -u root` in Linux terminal
+- To run MySQL shell type `sudo mysql -u root -p` in Linux terminal
 - Create your database with `CREATE DATABASE <your-database-name>;`
 - The use your database with `USE <your-database-name>;`
 - And create user identification `ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '<your-password>';`
