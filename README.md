@@ -1,11 +1,13 @@
 # Django_MySQL
 Here I have steps that describe how to connect MySQL to Django project on Linux.
 
+
 ### First of all, clone this repository, install virtual environment and download all requirements with the following commands:
 
 - `chmod u+x launch.sh`
 - `./launch.sh`
 - Choose the virtual environment's interpreter
+
 
 ### To install MySQL on Linux type the following commands in terminal:
 
@@ -14,12 +16,14 @@ Here I have steps that describe how to connect MySQL to Django project on Linux.
 - `sudo apt-get install mysql-client`
 - `sudo apt-get install libmariadbclient-dev`
 
+
 ### To create a database follow the next steps:
 
-- To run MySQL shell type `sudo mysql -u root` in Linux terminal
+- To run MySQL shell type `sudo mysql -u root -p` in Linux terminal
 - Create your database with `CREATE DATABASE <your-database-name>;`
 - The use your database with `USE <your-database-name>;`
 - And create user identification `ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '<your-password>';`
+
 
 ### Connect your database with Django:
 
