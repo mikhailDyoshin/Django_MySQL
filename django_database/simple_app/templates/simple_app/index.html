@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    {% if latest_notes_list %}
+
+        <ul>
+        {% for note in latest_notes_list %}
+            <li>
+                <a href="/simple_app/{{ note.id }}/">{{ note.day}}</a>
+            </li>
+        {% endfor %}
+        </ul>
+
+    {% else %}
+        <p>Notes are not available.</p>
+    {% endif %}
+
+</body>
+
+</html>

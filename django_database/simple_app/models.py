@@ -1,6 +1,10 @@
 from django.db import models
 
 # Create your models here.
-class Person(models.Model):
-    first_name = models.CharField(max_length=30)
-    last_name = models.CharField(max_length=30)
+class Note(models.Model):
+    day = models.DateField(auto_now=True)
+    day_note = models.TextField()
+
+    def __str__(self):
+        return f'{self.day}, {self.day_note}'
+        
